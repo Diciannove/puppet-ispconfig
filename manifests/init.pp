@@ -47,7 +47,7 @@ inherits ispconfig::params
 	{
 		"ispconfig::jailkit":
 			require 			=> Class["ispconfig::system"],
-			jailkit_version	=> '2.17',
+#			jailkit_version	=> '2.17',
 	}
 
 	class
