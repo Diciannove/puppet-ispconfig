@@ -1,3 +1,4 @@
+#$jailkit_version				= $ispconfig::params::jailkit_version,
 class ispconfig
 (
  	$mysql_root_passwd 		= $ispconfig::params::mysql_root_passwd,
@@ -11,7 +12,6 @@ class ispconfig
 	$ssl_email					= '',
 	$ssl_days					= $ispconfig::params::ssl_days,
 	$ssl_password				= '',
-	#$jailkit_version				= $ispconfig::params::jailkit_version,
 	$jailkit_version				= '2.17',
 	$php_date_timezone		= $ispconfig::params::php_date_timezone,
 	$php_memory_limit			= $ispconfig::params::php_memory_limit,
@@ -46,7 +46,7 @@ inherits ispconfig::params
 	class
 	{
 		"ispconfig::jailkit":
-			jailkit_version	=> $jailkit_version,
+			jailkit_version	=> '2.17',
 			require 			=> Class["ispconfig::system"],
 	}
 
