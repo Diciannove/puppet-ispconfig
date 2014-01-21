@@ -9,7 +9,7 @@ inherits ispconfig::params
 		'mysql::server':
 			require 			=> Class["system"],
 			config_hash		=> {
-				root_password 	=>$mysql_root_passwd,
+				root_password 	=> $mysql_root_passwd,
 				bind_address 	=> '127.0.0.1',
 			}
 	}
