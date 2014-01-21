@@ -1,4 +1,5 @@
-class ispconfig::default {
+class  {
+    'ispconfig':
     $mysql_root_passwd      => 'test',
     $ssl_country                => 'TEST',
     $ssl_organization           => 'Test',
